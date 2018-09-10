@@ -1,0 +1,17 @@
+﻿<UserControl 
+    x:Class="Example.TestDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Margin="15">
+
+    <StackPanel>
+        <TextBlock Text="Input your name"/>
+
+        <TextBox Name="Name"/>
+
+        <Button Content="Close dialog"
+                Command="{Binding CloseDialogCommand}"
+                CommandParameter="{Binding Text, ElementName=Name}"/>
+    </StackPanel>
+
+</UserControl>
