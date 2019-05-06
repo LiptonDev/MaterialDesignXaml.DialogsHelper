@@ -47,9 +47,6 @@
     <Reference Include="MaterialDesignThemes.Wpf, Version=2.4.1.1101, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignXaml.DialogsHelper.1.0.0\lib\MaterialDesignThemes.Wpf.dll</HintPath>
     </Reference>
-    <Reference Include="MaterialDesignXaml.DialogsHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MaterialDesignXaml.DialogsHelper.1.0.0\lib\MaterialDesignXaml.DialogsHelper.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
@@ -111,6 +108,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MaterialDesignXaml.DialogsHelper\MaterialDesignXaml.DialogsHelper.csproj">
+      <Project>{79b52587-d1c5-4815-942a-6e7043e1f199}</Project>
+      <Name>MaterialDesignXaml.DialogsHelper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

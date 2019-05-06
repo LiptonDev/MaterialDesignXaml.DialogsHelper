@@ -5,18 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Example"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:controls="clr-namespace:MaterialDesignXaml.DialogsHelper.Controls;assembly=MaterialDesignXaml.DialogsHelper"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" 
+        Height="450" 
+        Width="800">
 
     <Window.DataContext>
         <local:MainWindowVM/>
     </Window.DataContext>
 
+    <Window.Resources>
+        <!-- Style for MESSAGEBOX buttons (!) -->
+        <Style TargetType="controls:DialogButton"> <!-- !!! -->
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Resources>
+
     <materialDesign:DialogHost Identifier="{Binding Identifier}">
-        <Button Content="Open dialog"
-                Command="{Binding OpenDialogCommand}"
-                Height="50"
-                Width="100"/>
+        <StackPanel>
+            <Button Content="Open dialog"
+                    Command="{Binding OpenDialogCommand}"/>
+
+            <Button Content="Open 2 sec dialog"
+                    Command="{Binding Open2SecDialogCommand}"/>
+
+            <Button Content="Open messagebox"
+                    Command="{Binding OpenMessageBox}"/>
+        </StackPanel>
     </materialDesign:DialogHost>
 
 </Window>
