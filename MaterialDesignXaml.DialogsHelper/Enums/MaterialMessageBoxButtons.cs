@@ -9,6 +9,12 @@ namespace MaterialDesignXaml.DialogsHelper.Enums
     public enum MaterialMessageBoxButtons : byte
     {
         /// <summary>
+        /// No button was pressed.
+        /// This button didn't showed in messagebox.
+        /// </summary>
+        Nothing = 0,
+
+        /// <summary>
         /// OK button.
         /// </summary>
         Ok = 1,
@@ -39,7 +45,7 @@ namespace MaterialDesignXaml.DialogsHelper.Enums
         OkCancel = Ok | Cancel,
 
         /// <summary>
-        /// All buttons
+        /// All buttons.
         /// </summary>
         All = Ok | Cancel | Yes | No
     }

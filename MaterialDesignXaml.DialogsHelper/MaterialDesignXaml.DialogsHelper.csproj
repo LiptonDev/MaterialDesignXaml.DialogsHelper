@@ -52,12 +52,14 @@
   <ItemGroup>
     <Compile Include="Controls\DialogButton.cs" />
     <Compile Include="DialogHelper.cs" />
+    <Compile Include="DialogIdentifier.cs" />
     <Compile Include="Dialogs\MaterialMessageBox.xaml.cs">
       <DependentUpon>MaterialMessageBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="IClosableDialog.cs" />
     <Compile Include="IDialogIdentifier.cs" />
     <Compile Include="Enums\MaterialMessageBoxButtons.cs" />
+    <Compile Include="IMultiDialogIdentifier.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

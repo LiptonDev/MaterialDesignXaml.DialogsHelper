@@ -115,6 +115,22 @@ namespace MaterialDesignXaml.DialogsHelper
 
         #region Close methods
         /// <summary>
+        /// Close all dialogs with parameter.
+        /// </summary>
+        /// <param name="multiDialogIdentifier">Dialogs identifiers.</param>
+        /// <param name="parameter">Parameter.</param>
+        public static void CloseAll(this IMultiDialogIdentifier multiDialogIdentifier, object parameter) =>
+            multiDialogIdentifier.DialogIdentifiers.ForEach(x => x.Close(parameter));
+
+        /// <summary>
+        /// Close all dialogs.
+        /// </summary>
+        /// <param name="multiDialogIdentifier">Dialogs identifiers.</param>
+        public static void CloseAll(this IMultiDialogIdentifier multiDialogIdentifier) =>
+            multiDialogIdentifier.CloseAll(null);
+
+
+        /// <summary>
         /// Close dialog with parameter.
         /// </summary>
         /// <param name="dialog">Closable dialog.</param>
