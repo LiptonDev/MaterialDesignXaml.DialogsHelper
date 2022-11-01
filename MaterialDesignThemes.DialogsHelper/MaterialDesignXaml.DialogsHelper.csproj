@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>MaterialDesignXaml.DialogsHelper</RootNamespace>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>$(AssemblyName)</Title>
+    <Version>1.0.4</Version>
+    <Authors>Alexandr Smirnov</Authors>
+    <Company>Alexandr Smirnov</Company>
+    <Description>Show, close material dialogs &amp; messages box, dialog identifier.</Description>
+    <Copyright>Alexandr Smirnov</Copyright>
+    <PackageProjectUrl>https://github.com/LiptonDev/MaterialDesignXaml.DialogsHelper</PackageProjectUrl>
+    <PackageIcon>6281752-middle.png</PackageIcon>
+    <RepositoryUrl>https://github.com/LiptonDev/MaterialDesignXaml.DialogsHelper</RepositoryUrl>
+    <PackageTags>material;materialdesign;materialdesignxaml;materialdesignthemes;xaml;wpf;dialogs;WinRT;Design;UI;UX;messagebox</PackageTags>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageReleaseNotes>Supports .net core 3.1+
+Adding support message box buttons</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\6281752-middle.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Dialogs\MaterialMessageBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>
