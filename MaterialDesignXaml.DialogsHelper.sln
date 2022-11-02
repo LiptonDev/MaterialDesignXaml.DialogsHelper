@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaterialDesignXaml.DialogsHelper", "MaterialDesignThemes.DialogsHelper\MaterialDesignXaml.DialogsHelper.csproj", "{44BD0FB5-F921-4547-A8A8-AE9AB9CC3C6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{BFA955D8-ADB7-4097-A9A3-8AF87E0C86CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiExample", "MultiExample\MultiExample.csproj", "{BE3CC97C-8C1D-4225-B5AA-A73104417894}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{44BD0FB5-F921-4547-A8A8-AE9AB9CC3C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44BD0FB5-F921-4547-A8A8-AE9AB9CC3C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44BD0FB5-F921-4547-A8A8-AE9AB9CC3C6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA955D8-ADB7-4097-A9A3-8AF87E0C86CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA955D8-ADB7-4097-A9A3-8AF87E0C86CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA955D8-ADB7-4097-A9A3-8AF87E0C86CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA955D8-ADB7-4097-A9A3-8AF87E0C86CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE3CC97C-8C1D-4225-B5AA-A73104417894}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3CC97C-8C1D-4225-B5AA-A73104417894}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3CC97C-8C1D-4225-B5AA-A73104417894}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3CC97C-8C1D-4225-B5AA-A73104417894}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

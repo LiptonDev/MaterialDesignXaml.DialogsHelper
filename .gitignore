@@ -3,3 +3,7 @@
 ################################################################################
 
 /Example/bin/Debug/net6.0-windows
+/Example/obj
+/MaterialDesignThemes.DialogsHelper/bin/Debug
+/MultiExample/bin/Debug/net6.0-windows
+/MultiExample/obj
